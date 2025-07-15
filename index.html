@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste From The Greens - Premium Milk Tea Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Taste From The Greens</h1>
+                <span>Premium Milk Tea Experience</span>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Experience the <span class="highlight">Freshest</span> Milk Tea</h2>
+                <p>Indulge in our premium selection of milk teas, smoothies, and specialty drinks crafted with the finest ingredients and authentic flavors.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToMenu()">Explore Menu</button>
+                    <button class="btn-secondary" onclick="showOrderAlert()">Order Now</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cup">
+                    <div class="cup-body"></div>
+                    <div class="cup-lid"></div>
+                    <div class="straw"></div>
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+                </div>
+                <div class="decorative-leaves">
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                    <div class="leaf leaf-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Discover our extensive collection of premium beverages</p>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="red-milk-tea">Red Milk Tea</button>
+                <button class="filter-btn" data-category="black-milk-tea">Black Milk Tea</button>
+                <button class="filter-btn" data-category="green-tea">Green Tea</button>
+                <button class="filter-btn" data-category="smoothies">Smoothies</button>
+                <button class="filter-btn" data-category="coffee">Coffee</button>
+                <button class="filter-btn" data-category="specialties">Specialties</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for your favorite drink...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Red Milk Tea -->
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Blueberry Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Brown Sugar Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Chocomalt Cream Puff Red Milk Tea</h3>
+                    <p class="price">₱ 134.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Cookies & Cream Puff Red Milk Tea</h3>
+                    <p class="price">₱ 128.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Lychee Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Plain Red Milk Tea</h3>
+                    <p class="price">₱ 99.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Strawberry Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Winter Melon Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="red-milk-tea">
+                    <div class="card-icon red-tea"></div>
+                    <h3>Yogurt Red Milk Tea</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <!-- Black Milk Tea -->
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Assam Black Milk Tea</h3>
+                    <p class="price">₱ 99.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Caramel Black Milk Tea</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Coffee Black Milk Tea</h3>
+                    <p class="price">₱ 100.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Dark Chocolate Black Milk Tea</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Hazelnut Black Milk Tea</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Honeydew Black Milk Tea</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <div class="menu-card" data-category="black-milk-tea">
+                    <div class="card-icon black-tea"></div>
+                    <h3>Taro Black Milk Tea</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <!-- Green Tea -->
+                <div class="menu-card" data-category="green-tea">
+                    <div class="card-icon green-tea"></div>
+                    <h3>Lemon & Honey Fresh Green Tea</h3>
+                    <p class="price">₱ 99.00</p>
+                </div>
+
+                <div class="menu-card" data-category="green-tea">
+                    <div class="card-icon green-tea"></div>
+                    <h3>Passion Fruit Fresh Green Tea</h3>
+                    <p class="price">₱ 99.00</p>
+                </div>
+
+                <div class="menu-card" data-category="green-tea">
+                    <div class="card-icon green-tea"></div>
+                    <h3>Yakult Fresh Green Tea</h3>
+                    <p class="price">₱ 110.00</p>
+                </div>
+
+                <div class="menu-card" data-category="green-tea">
+                    <div class="card-icon green-tea"></div>
+                    <h3>Grapefruit Fresh Green Tea</h3>
+                    <p class="price">₱ 99.00</p>
+                </div>
+
+                <div class="menu-card" data-category="green-tea">
+                    <div class="card-icon green-tea"></div>
+                    <h3>Kiwi-Yakult Fresh Green Tea</h3>
+                    <p class="price">₱ 122.00</p>
+                </div>
+
+                <!-- Smoothies -->
+                <div class="menu-card" data-category="smoothies">
+                    <div class="card-icon smoothie"></div>
+                    <h3>Creamy Taro Smoothie</h3>
+                    <p class="price">₱ 122.00</p>
+                </div>
+
+                <div class="menu-card" data-category="smoothies">
+                    <div class="card-icon smoothie"></div>
+                    <h3>Dark Chocolate Smoothie</h3>
+                    <p class="price">₱ 104.00</p>
+                </div>
+
+                <div class="menu-card" data-category="smoothies">
+                    <div class="card-icon smoothie"></div>
+                    <h3>Honeydew Smoothie</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="smoothies">
+                    <div class="card-icon smoothie"></div>
+                    <h3>Matcha Cream Puff Smoothie</h3>
+                    <p class="price">₱ 140.00</p>
+                </div>
+
+                <div class="menu-card" data-category="smoothies">
+                    <div class="card-icon smoothie"></div>
+                    <h3>Mocha Caramel Smoothie</h3>
+                    <p class="price">₱ 122.00</p>
+                </div>
+
+                <!-- Coffee -->
+                <div class="menu-card" data-category="coffee">
+                    <div class="card-icon coffee"></div>
+                    <h3>Classic Coffee Bits</h3>
+                    <p class="price">₱ 163.00</p>
+                </div>
+
+                <div class="menu-card" data-category="coffee">
+                    <div class="card-icon coffee"></div>
+                    <h3>Golden Iced Coffee</h3>
+                    <p class="price">₱ 116.00</p>
+                </div>
+
+                <div class="menu-card" data-category="coffee">
+                    <div class="card-icon coffee"></div>
+                    <h3>White Iced Coffee</h3>
+                    <p class="price">₱ 122.00</p>
+                </div>
+
+                <div class="menu-card" data-category="coffee">
+                    <div class="card-icon coffee"></div>
+                    <h3>Cold Brew Coffee Latte</h3>
+                    <p class="price">₱ 163.00</p>
+                </div>
+
+                <!-- Specialties -->
+                <div class="menu-card" data-category="specialties">
+                    <div class="card-icon specialty"></div>
+                    <h3>Dark Choco Hazelnut Latte</h3>
+                    <p class="price">₱ 152.00</p>
+                </div>
+
+                <div class="menu-card" data-category="specialties">
+                    <div class="card-icon specialty"></div>
+                    <h3>Mucho Matcha Cream Puff</h3>
+                    <p class="price">₱ 181.00</p>
+                </div>
+
+                <div class="menu-card" data-category="specialties">
+                    <div class="card-icon specialty"></div>
+                    <h3>Supreme Taro</h3>
+                    <p class="price">₱ 169.00</p>
+                </div>
+
+                <div class="menu-card" data-category="specialties">
+                    <div class="card-icon specialty"></div>
+                    <h3>Traditional Brown Sugar</h3>
+                    <p class="price">₱ 130.00</p>
+                </div>
+
+                <div class="menu-card" data-category="specialties">
+                    <div class="card-icon specialty"></div>
+                    <h3>Mango Deluxe</h3>
+                    <p class="price">₱ 187.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Taste From The Greens</h2>
+                    <p>We are passionate about bringing you the finest milk tea experience with authentic flavors and premium ingredients. Our commitment to quality and taste has made us a favorite destination for tea lovers.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">🍃</div>
+                            <h3>Premium Ingredients</h3>
+                            <p>We use only the finest tea leaves and natural ingredients</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🥤</div>
+                            <h3>Authentic Flavors</h3>
+                            <p>Traditional recipes with modern twists</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⭐</div>
+                            <h3>Quality Service</h3>
+                            <p>Consistent quality and friendly service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="tea-illustration">
+                        <div class="tea-cup"></div>
+                        <div class="steam"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours">
+        <div class="container">
+            <h2>Operating Hours</h2>
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h3>Daily Hours</h3>
+                    <p><strong>10:00 AM - 9:00 PM</strong></p>
+                    <p>Open 7 days a week</p>
+                </div>
+                <div class="hours-info">
+                    <h3>Mall Branches</h3>
+                    <p>Follow respective mall operating hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/tastesfromthegreens/" class="social-link">FACEBOOK</a>
+                            <a href="https://www.instagram.com/tftg_philippines/" class="social-link">INSTAGRAM</a>
+                            <a href="https://x.com/tastesftgreens?lang=en" class="social-link">TWITTER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Taste From The Greens</h3>
+                    <p>Premium milk tea experience with authentic flavors</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Hours: 10:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Taste From The Greens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
