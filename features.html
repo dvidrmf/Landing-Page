@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Taste From The Greens</title>
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Taste From The Greens</h1>
+                <span>Premium Milk Tea Experience</span>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#features" class="active">Features</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="features-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Our Premium <span class="highlight">Tea Culture</span></h1>
+            <p>Discover what makes Taste From The Greens the ultimate destination for milk tea lovers</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Flavors</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Fresh</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Daily</span>
+                    <span class="stat-label">Made</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Gallery -->
+    <section class="features-gallery" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Story in Pictures</h2>
+            <p class="section-subtitle">From fresh ingredients to happy customers - see what makes us special</p>
+
+            <!-- Image Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Image 1: Fresh Ingredients -->
+                <div class="gallery-item" data-aos="fade-up">
+                    <div class="image-container">
+                        <img src="media/1.jpg" alt="Fresh Premium Ingredients" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image ingredients"></div>
+                        <div class="image-overlay">
+                            <h3>Fresh Premium Ingredients</h3>
+                            <p>We source only the finest tea leaves and natural flavors</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Quality Ingredients</h4>
+                        <p>Premium tea leaves imported directly from tea gardens, fresh fruits, and natural sweeteners.</p>
+                    </div>
+                </div>
+
+                <!-- Image 2: Tea Preparation -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="image-container">
+                        <img src="media/3.jpg" alt="Expert Tea Preparation" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image preparation"></div>
+                        <div class="image-overlay">
+                            <h3>Expert Tea Preparation</h3>
+                            <p>Our skilled baristas craft each drink to perfection</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Crafted with Care</h4>
+                        <p>Every cup is carefully prepared using traditional brewing methods combined with modern techniques.</p>
+                    </div>
+                </div>
+
+                <!-- Image 3: Signature Drinks -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="media/2.jpg" alt="Signature Milk Teas" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image drinks"></div>
+                        <div class="image-overlay">
+                            <h3>Signature Milk Teas</h3>
+                            <p>Our most popular and Instagram-worthy creations</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Instagram-Worthy</h4>
+                        <p>Beautiful presentations with layers of flavors that taste as good as they look.</p>
+                    </div>
+                </div>
+
+                <!-- Image 4: Store Interior -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-container">
+                        <img src="media/4.jpg" alt="Cozy Store Interior" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image interior"></div>
+                        <div class="image-overlay">
+                            <h3>Cozy Atmosphere</h3>
+                            <p>A perfect place to relax and enjoy your favorite drink</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Welcoming Space</h4>
+                        <p>Modern, comfortable interior designed for both quick takeaways and relaxing stays.</p>
+                    </div>
+                </div>
+
+                <!-- Image 5: Happy Customers -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image-container">
+                        <img src="media/5.jpg" alt="Happy Customers" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image customers"></div>
+                        <div class="image-overlay">
+                            <h3>Happy Customers</h3>
+                            <p>Smiles and satisfaction with every sip</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Customer Joy</h4>
+                        <p>Nothing makes us happier than seeing our customers enjoy their favorite drinks.</p>
+                    </div>
+                </div>
+
+                <!-- Image 6: Toppings Bar -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="image-container">
+                        <img src="media/6.jpg" alt="Premium Toppings Bar" class="gallery-image" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-image').style.display='none';" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-image').style.display='block';">
+                        <div class="placeholder-image toppings"></div>
+                        <div class="image-overlay">
+                            <h3>Premium Toppings</h3>
+                            <p>Choose from our variety of fresh toppings</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>Customize Your Drink</h4>
+                        <p>Pearls, jelly, cream cheese, and more - make it uniquely yours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section class="video-showcase">
+        <div class="container">
+            <h2 class="section-title">See Us in Action</h2>
+            <p class="section-subtitle">Watch how we create magic in every cup</p>
+
+            <div class="video-grid">
+                <!-- Video 1: Making Process -->
+                <div class="video-item" data-aos="fade-right">
+                    <div class="video-container">
+                        <!-- Video element with better fallback handling -->
+                        <video class="video-element" 
+                               poster="media/vid1-thumb.jpg" 
+                               preload="metadata"
+                               onloadedmetadata="this.style.display='block'; this.parentElement.querySelector('.video-placeholder').style.display='none';"
+                               onerror="this.style.display='none'; this.parentElement.querySelector('.video-placeholder').style.display='block';">
+                            <source src="media/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <!-- Enhanced placeholder with better visuals -->
+                        <div class="video-placeholder process">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">🎬</div>
+                                <h4>The Art of Tea Making</h4>
+                                <p>Video Preview Coming Soon</p>
+                            </div>
+                        </div>
+                        
+                        <div class="play-button" onclick="playVideo('process', this)">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <polygon points="22,18 22,42 42,30" fill="#588157"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="video-overlay">
+                            <h3>The Art of Tea Making</h3>
+                            <p>Watch our baristas craft the perfect milk tea from scratch</p>
+                            <span class="duration">2:15</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Behind the Scenes</h4>
+                        <p>See the meticulous process behind every cup - from brewing the tea to adding the perfect amount of milk and sweetness.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2: Customer Experience -->
+                <div class="video-item" data-aos="fade-left">
+                    <div class="video-container">
+                        <video class="video-element" 
+                               poster="media/vid2-thumb.jpg" 
+                               preload="metadata"
+                               onloadedmetadata="this.style.display='block'; this.parentElement.querySelector('.video-placeholder').style.display='none';"
+                               onerror="this.style.display='none'; this.parentElement.querySelector('.video-placeholder').style.display='block';">
+                            <source src="media/vid2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <div class="video-placeholder experience">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">🌟</div>
+                                <h4>Pampanga's Pride</h4>
+                                <p>Featured by Where In Pampanga</p>
+                            </div>
+                        </div>
+                        
+                        <div class="play-button" onclick="playVideo('experience', this)">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <polygon points="22,18 22,42 42,30" fill="#588157"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="video-overlay">
+                            <h3>One of Pampanga's pride for milk teas</h3>
+                            <p>Video by Where In Pampanga</p>
+                            <span class="duration">1:45</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>A vlog featuring Taste From the Greens</h4>
+                        <p>Hear directly from our customers about their favorite drinks and what keeps them coming back.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3: Store Tour -->
+                <div class="video-item" data-aos="fade-up">
+                    <div class="video-container">
+                        <video class="video-element" 
+                               poster="media/vid3-thumb.jpg" 
+                               preload="metadata"
+                               onloadedmetadata="this.style.display='block'; this.parentElement.querySelector('.video-placeholder').style.display='none';"
+                               onerror="this.style.display='none'; this.parentElement.querySelector('.video-placeholder').style.display='block';">
+                            <source src="media/vid3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <div class="video-placeholder tour">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">🏪</div>
+                                <h4>Virtual Store Tour</h4>
+                                <p>See our welcoming space</p>
+                            </div>
+                        </div>
+                        
+                        <div class="play-button" onclick="playVideo('tour', this)">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <polygon points="22,18 22,42 42,30" fill="#588157"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="video-overlay">
+                            <h3>Virtual Store Tour</h3>
+                            <p>Take a walk through our cozy tea shop</p>
+                            <span class="duration">3:20</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Visit Us</h4>
+                        <p>Get a virtual tour of our store and see why customers love spending time in our welcoming space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Highlights -->
+    <section class="features-highlights">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item" data-aos="zoom-in">
+                    <div class="highlight-icon">🍃</div>
+                    <h3>100% Natural</h3>
+                    <p>No artificial flavors or preservatives. Only natural ingredients sourced responsibly.</p>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="highlight-icon">⚡</div>
+                    <h3>Quick Service</h3>
+                    <p>Fast preparation without compromising quality. Perfect for busy schedules.</p>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="highlight-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Adjust sweetness, ice level, and toppings to create your perfect drink.</p>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="highlight-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Only the finest ingredients and equipment to ensure consistent excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Taste the Difference?</h2>
+                <p>Visit us today and discover why we're the preferred choice for milk tea lovers</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="showLocationInfo()">Find Our Location</button>
+                    <button class="btn-secondary" onclick="showOrderInfo()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Taste From The Greens</h3>
+                    <p>Premium milk tea experience with authentic flavors</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="index.html#menu">Menu</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: 09123456789</p>
+                    <p>Hours: 10:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Taste From The Greens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeVideo()">&times;</span>
+            <div class="modal-video">
+                <div class="video-player" id="videoPlayer">
+                    <p>Video content would be displayed here</p>
+                    <button onclick="closeVideo()">Close Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/features.js"></script>
+</body>
+</html>
