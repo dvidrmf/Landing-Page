@@ -120,6 +120,75 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Add to Cart Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    let cart = [];
+    
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.menu-card');
+            const title = card.querySelector('h3').textContent;
+            const price = card.querySelector('.price').textContent;
+            
+            // Add item to cart array
+            cart.push({
+                name: title,
+                price: price
+            });
+            
+            // Visual feedback
+            this.textContent = 'Added!';
+            this.style.background = 'linear-gradient(45deg, #28a745, #34ce57)';
+            
+            // Reset button after 2 seconds
+            setTimeout(() => {
+                this.textContent = 'Add to Cart';
+                this.style.background = 'linear-gradient(45deg, #588157, #A3B18A)';
+            }, 2000);
+            
+            // Show cart summary
+            updateCartDisplay();
+        });
+    });
+    
+    function updateCartDisplay() {
+        if (cart.length > 0) {
+            console.log('Cart contents:', cart);
+            // You can implement a cart display modal here
+            showCartNotification();
+        }
+    }
+    
+    function showCartNotification() {
+        // Create a temporary notification
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: linear-gradient(45deg, #588157, #A3B18A);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1001;
+            animation: slideIn 0.3s ease;
+        `;
+        notification.innerHTML = `
+            <div style="font-weight: bold; margin-bottom: 5px;">Item Added to Cart!</div>
+            <div style="font-size: 0.9rem;">Total items: ${cart.length}</div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Remove notification after 3 seconds
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+});
+
 // Header Scroll Effect
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
