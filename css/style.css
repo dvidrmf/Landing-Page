@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #344E41;
     background-color: #DAD7CD;
@@ -450,6 +450,23 @@ body {
     font-weight: bold;
     color: #ff9500;
     margin-bottom: 1.5rem;
+}
+
+.add-to-cart {
+    background: linear-gradient(45deg, #588157, #A3B18A);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(45deg, #3A5A40, #588157);
+    transform: translateY(-2px);
 }
 
 /* About Section */
